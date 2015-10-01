@@ -71,10 +71,6 @@
     [_appDelegate saveContext];
 }
 
-- (IBAction)personFirstName:(id)sender {
-    NSLog(@"First Name: %@",_firstNameLabel.text);
-}
-
 - (NSArray *)fetchPersons {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Persons" inManagedObjectContext:_managedObjectContext];
