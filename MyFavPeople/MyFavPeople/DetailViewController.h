@@ -11,7 +11,8 @@
 
 @interface DetailViewController : UIViewController <UITextViewDelegate>
 
-@property (nonatomic, strong) Persons *currentPerson;
+@property (nonatomic, strong) Persons                *currentPerson;
+@property (nonatomic, weak)   IBOutlet  UITableView  *personView;
 
 
 @end

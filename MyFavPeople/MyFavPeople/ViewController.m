@@ -50,7 +50,6 @@
     else if ([[segue identifier] isEqualToString:@"segueAddPerson"]) {
         destController.currentPerson = nil;
     }
-    
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {

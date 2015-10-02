@@ -29,6 +29,12 @@
 
 @implementation DetailViewController
 
+#pragma mark - Table View Methods
+
+- (void)addPersonLabels {
+    //use the label create array from hangman**
+}
+
 #pragma mark - Interactivity Methods
 
 - (void)saveAndPop {
