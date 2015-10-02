@@ -14,9 +14,6 @@
 @interface ViewController ()
 
 @property (nonatomic, strong) AppDelegate              *appDelegate;
-@property (nonatomic, strong) NSManagedObjectContext   *managedObjectContext;
-@property (nonatomic, strong) NSArray                  *personArray;
-@property (nonatomic, weak)   IBOutlet UITableView     *personsTableView;
 
 @end
 
@@ -55,6 +52,17 @@
     
 }
 
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        NSLog(@"Going to delete %li",indexPath.row);
+        Persons *personToDelete = _personArray[indexPath.row];
+        [_managedObjectContext deleteObject:personToDelete];
+        [_appDelegate saveContext];
+        _personArray = [self fetchPersons];
+        [_personsTableView reloadData];
+    }
+}
+
 #pragma mark - Core Data Methods
 
 - (void)tempAddRecords {
@@ -86,8 +94,14 @@
     _appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     _managedObjectContext = _appDelegate.managedObjectContext;
     _personArray = [[NSArray alloc] init];
-        [self tempAddRecords];
-        _personArray = [self fetchPersons];
+//        [self tempAddRecords];
+//        _personArray = [self fetchPersons];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    _personArray = [self fetchPersons];
+    [_personsTableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {

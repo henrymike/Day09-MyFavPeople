@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "Persons.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <UITextViewDelegate>
+
 @property (nonatomic, strong) Persons *currentPerson;
 
 

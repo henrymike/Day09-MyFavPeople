@@ -10,5 +10,8 @@
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, strong) NSManagedObjectContext   *managedObjectContext;
+@property (nonatomic, strong) NSArray                  *personArray;
+@property (nonatomic, weak)   IBOutlet UITableView     *personsTableView;
 
 @end

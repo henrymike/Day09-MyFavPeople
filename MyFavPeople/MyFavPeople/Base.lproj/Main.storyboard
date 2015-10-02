@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nFZ-52-6uF">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Contacts-->
@@ -16,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gcn-0r-HAi">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gcn-0r-HAi">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -39,8 +41,20 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gcn-0r-HAi" secondAttribute="bottom" id="3nc-DI-8IR"/>
+                            <constraint firstItem="gcn-0r-HAi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="EBc-Xh-z8e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gcn-0r-HAi" secondAttribute="trailing" constant="-20" id="Qar-E1-txo"/>
+                            <constraint firstItem="gcn-0r-HAi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="eOC-Lm-l3i"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Contacts" id="KfS-XE-nWd"/>
+                    <navigationItem key="navigationItem" title="Contacts" id="KfS-XE-nWd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="heE-Ki-tCD">
+                            <connections>
+                                <segue destination="qNs-WE-Hg0" kind="show" identifier="segueAddPerson" id="2H9-tk-o1Y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="personsTableView" destination="gcn-0r-HAi" id="pXd-Vw-ehM"/>
                     </connections>
@@ -72,30 +86,61 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address Street" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYc-yV-8Ht">
-                                <rect key="frame" x="31" y="173" width="97" height="30"/>
+                                <rect key="frame" x="31" y="207" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="veD-mF-9sE">
-                                <rect key="frame" x="31" y="205" width="97" height="30"/>
+                                <rect key="frame" x="31" y="239" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zUO-ph-siJ">
-                                <rect key="frame" x="31" y="238" width="97" height="30"/>
+                                <rect key="frame" x="31" y="272" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address Zip" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u0b-aA-lQK">
+                                <rect key="frame" x="31" y="305" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q92-vF-rLm">
+                                <rect key="frame" x="31" y="337" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Role" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XfS-AW-hcw">
+                                <rect key="frame" x="31" y="174" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Contact" id="Ali-Os-Uhm"/>
+                    <navigationItem key="navigationItem" title="Contact" id="Ali-Os-Uhm">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="save" id="ejo-ai-TSE">
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="qNs-WE-Hg0" id="mO3-aK-8B4"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="trash" id="uEZ-UF-sFt">
+                                <connections>
+                                    <action selector="deleteButtonPressed:" destination="qNs-WE-Hg0" id="VIl-jc-IiN"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="addressCityTextField" destination="veD-mF-9sE" id="o2W-7d-iTw"/>
                         <outlet property="addressStateTextField" destination="zUO-ph-siJ" id="ScC-RI-XTM"/>
                         <outlet property="addressStreetTextField" destination="eYc-yV-8Ht" id="Yxf-18-itq"/>
+                        <outlet property="addressZipTextField" destination="u0b-aA-lQK" id="Uqu-b6-cHe"/>
                         <outlet property="firstNameTextField" destination="bdS-yk-S7v" id="x3U-pd-VmY"/>
                         <outlet property="lastNameTextField" destination="s18-Iz-bQv" id="CIY-Kx-odc"/>
+                        <outlet property="phoneTextField" destination="Q92-vF-rLm" id="hu8-ZO-SnD"/>
+                        <outlet property="roleField" destination="XfS-AW-hcw" id="pmK-F9-4a5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moF-Af-UaJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -121,4 +166,7 @@
             <point key="canvasLocation" x="245" y="313"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2H9-tk-o1Y"/>
+    </inferredMetricsTieBreakers>
 </document>
