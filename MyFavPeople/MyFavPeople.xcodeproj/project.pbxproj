@@ -19,6 +19,7 @@
 		5549177E1BBDCF8600D445F1 /* Persons+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 554917791BBDCF8600D445F1 /* Persons+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 		5549177F1BBDCF8600D445F1 /* Persons.m in Sources */ = {isa = PBXBuildFile; fileRef = 5549177B1BBDCF8600D445F1 /* Persons.m */; settings = {ASSET_TAGS = (); }; };
 		554917831BBDD3D300D445F1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554917821BBDD3D300D445F1 /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		554917861BBEFB1A00D445F1 /* TextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 554917851BBEFB1A00D445F1 /* TextTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		5549177B1BBDCF8600D445F1 /* Persons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persons.m; sourceTree = "<group>"; };
 		554917811BBDD3D300D445F1 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		554917821BBDD3D300D445F1 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		554917841BBEFB1A00D445F1 /* TextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTableViewCell.h; sourceTree = "<group>"; };
+		554917851BBEFB1A00D445F1 /* TextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				5549175E1BBDCD6A00D445F1 /* ViewController.m */,
 				554917811BBDD3D300D445F1 /* DetailViewController.h */,
 				554917821BBDD3D300D445F1 /* DetailViewController.m */,
+				554917841BBEFB1A00D445F1 /* TextTableViewCell.h */,
+				554917851BBEFB1A00D445F1 /* TextTableViewCell.m */,
 				554917601BBDCD6A00D445F1 /* Main.storyboard */,
 				554917661BBDCD6A00D445F1 /* Assets.xcassets */,
 				554917681BBDCD6A00D445F1 /* LaunchScreen.storyboard */,
@@ -187,6 +192,7 @@
 			files = (
 				5549177E1BBDCF8600D445F1 /* Persons+CoreDataProperties.m in Sources */,
 				554917651BBDCD6A00D445F1 /* MyFavPeople.xcdatamodeld in Sources */,
+				554917861BBEFB1A00D445F1 /* TextTableViewCell.m in Sources */,
 				554917831BBDD3D300D445F1 /* DetailViewController.m in Sources */,
 				5549177D1BBDCF8600D445F1 /* PersonEmails.m in Sources */,
 				5549175F1BBDCD6A00D445F1 /* ViewController.m in Sources */,
@@ -340,6 +346,7 @@
 				554917701BBDCD6A00D445F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
