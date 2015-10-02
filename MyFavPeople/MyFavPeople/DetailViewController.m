@@ -17,7 +17,6 @@
 @property (nonatomic, strong)          AppDelegate              *appDelegate;
 @property (nonatomic, strong)          NSManagedObjectContext   *managedObjectContext;
 
-@property (nonatomic, weak)   IBOutlet UITableView         *textTableView;
 @property (nonatomic, strong)          NSArray             *defaultCellTypeArray;
 @property (nonatomic, strong)          NSMutableArray      *cellTypeArray;
 @property (nonatomic, strong)          NSArray             *defaultCellLabelArray;
@@ -76,59 +75,41 @@
 - (IBAction)saveButtonPressed:(id)sender {
     NSLog(@"SAVE");
     NSIndexPath *indexPath0 = [NSIndexPath indexPathForRow:0 inSection:0];
-    TextTableViewCell *textCell0 = [_textTableView cellForRowAtIndexPath:indexPath0];
+    TextTableViewCell *textCell0 = [_personView cellForRowAtIndexPath:indexPath0];
     _currentPerson.personFirstName = textCell0.cellTextField.text;
     
     NSIndexPath *indexPath1 = [NSIndexPath indexPathForRow:1 inSection:0];
-    TextTableViewCell *textCell1 = [_textTableView cellForRowAtIndexPath:indexPath1];
+    TextTableViewCell *textCell1 = [_personView cellForRowAtIndexPath:indexPath1];
     _currentPerson.personLastName = textCell1.cellTextField.text;
     
     NSIndexPath *indexPath2 = [NSIndexPath indexPathForRow:2 inSection:0];
-    TextTableViewCell *textCell2 = [_textTableView cellForRowAtIndexPath:indexPath2];
+    TextTableViewCell *textCell2 = [_personView cellForRowAtIndexPath:indexPath2];
     _currentPerson.personRole = textCell2.cellTextField.text;
     
     NSIndexPath *indexPath3 = [NSIndexPath indexPathForRow:3 inSection:0];
-    TextTableViewCell *textCell3 = [_textTableView cellForRowAtIndexPath:indexPath3];
+    TextTableViewCell *textCell3 = [_personView cellForRowAtIndexPath:indexPath3];
     _currentPerson.personAddressStreet = textCell3.cellTextField.text;
     
     NSIndexPath *indexPath4 = [NSIndexPath indexPathForRow:4 inSection:0];
-    TextTableViewCell *textCell4 = [_textTableView cellForRowAtIndexPath:indexPath4];
+    TextTableViewCell *textCell4 = [_personView cellForRowAtIndexPath:indexPath4];
     _currentPerson.personAddressCity = textCell4.cellTextField.text;
     
     NSIndexPath *indexPath5 = [NSIndexPath indexPathForRow:5 inSection:0];
-    TextTableViewCell *textCell5 = [_textTableView cellForRowAtIndexPath:indexPath5];
+    TextTableViewCell *textCell5 = [_personView cellForRowAtIndexPath:indexPath5];
     _currentPerson.personAddressState = textCell5.cellTextField.text;
     
     NSIndexPath *indexPath6 = [NSIndexPath indexPathForRow:6 inSection:0];
-    TextTableViewCell *textCell6 = [_textTableView cellForRowAtIndexPath:indexPath6];
+    TextTableViewCell *textCell6 = [_personView cellForRowAtIndexPath:indexPath6];
     _currentPerson.personAddressZip = textCell6.cellTextField.text;
     
     NSIndexPath *indexPath7 = [NSIndexPath indexPathForRow:7 inSection:0];
-    TextTableViewCell *textCell7 = [_textTableView cellForRowAtIndexPath:indexPath7];
+    TextTableViewCell *textCell7 = [_personView cellForRowAtIndexPath:indexPath7];
     _currentPerson.personPhone = textCell7.cellTextField.text;
     
     _currentPerson.dateUpdated = [NSDate date];
     _currentPerson.userID = @"System";
-    
-//
-//    _currentPerson.personFirstName = _firstNameTextField.text;
-//    _currentPerson.personLastName = _lastNameTextField.text;
-//    _currentPerson.personRole = _roleField.text;
-//    _currentPerson.personAddressStreet = _addressStreetTextField.text;
-//    _currentPerson.personAddressCity = _addressCityTextField.text;
-//    _currentPerson.personAddressState = _addressStateTextField.text;
-//    _currentPerson.personAddressZip = _addressZipTextField.text;
-//    _currentPerson.personPhone = _phoneTextField.text;
     [self saveAndPop];
 }
-
-// Keep this for when you get data loading into tableview but not able to save it back out
-//- (IBAction)savePressed:(id)sender {
-//    NSIndexPath *indexPath0 = [NSIndexPath indexPathForRow:0 inSection:0];
-//    TextFieldTableViewCell *textCell0 = [_sampleTableView cellForRowAtIndexPath:indexPath0];
-//    NSLog(@"Cell Text 0 %0",textCell0.cellTextField.text);
-//    //make sure you add a UITableView property for this before using and change to 1,2,3
-//}
 
 - (IBAction)deleteButtonPressed:(id)sender {
     NSLog(@"DELETE");

@@ -35,7 +35,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *basicCell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"basicCell"];
     Persons *currentPerson = _personArray[indexPath.row];
-    basicCell.textLabel.text = [currentPerson personFirstName];
+//    basicCell.textLabel.text = [currentPerson personFirstName];
     basicCell.textLabel.text = [NSString stringWithFormat:@"%@ %@",currentPerson.personFirstName,currentPerson.personLastName];
     return basicCell;
 }
