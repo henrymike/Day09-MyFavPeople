@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="PersonEmails" representedClassName="PersonEmails" syncable="YES">
+        <attribute name="dateEntered" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="emailAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationshipPersonEmailsPersons" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Persons" inverseName="relationshipPersonsPersonEmail" inverseEntity="Persons" syncable="YES"/>
+    </entity>
+    <entity name="Persons" representedClassName="Persons" syncable="YES">
+        <attribute name="dateEntered" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="personAddressCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personAddressState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personAddressStreet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personAddressZip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personFirstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personLastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personRole" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personSkypeID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personTwitterID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationshipPersonsPersonEmail" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PersonEmails" inverseName="relationshipPersonEmailsPersons" inverseEntity="PersonEmails" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PersonEmails" positionX="-54" positionY="90" width="128" height="133"/>
+        <element name="Persons" positionX="-243" positionY="90" width="128" height="285"/>
+    </elements>
+</model>

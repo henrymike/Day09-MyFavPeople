@@ -14,12 +14,12 @@
 		554917651BBDCD6A00D445F1 /* MyFavPeople.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 554917631BBDCD6A00D445F1 /* MyFavPeople.xcdatamodeld */; };
 		554917671BBDCD6A00D445F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554917661BBDCD6A00D445F1 /* Assets.xcassets */; };
 		5549176A1BBDCD6A00D445F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554917681BBDCD6A00D445F1 /* LaunchScreen.storyboard */; };
-		5549177C1BBDCF8600D445F1 /* PersonEmails+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 554917751BBDCF8600D445F1 /* PersonEmails+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
-		5549177D1BBDCF8600D445F1 /* PersonEmails.m in Sources */ = {isa = PBXBuildFile; fileRef = 554917771BBDCF8600D445F1 /* PersonEmails.m */; settings = {ASSET_TAGS = (); }; };
-		5549177E1BBDCF8600D445F1 /* Persons+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 554917791BBDCF8600D445F1 /* Persons+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
-		5549177F1BBDCF8600D445F1 /* Persons.m in Sources */ = {isa = PBXBuildFile; fileRef = 5549177B1BBDCF8600D445F1 /* Persons.m */; settings = {ASSET_TAGS = (); }; };
 		554917831BBDD3D300D445F1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554917821BBDD3D300D445F1 /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		554917861BBEFB1A00D445F1 /* TextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 554917851BBEFB1A00D445F1 /* TextTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		554917901BBF20E500D445F1 /* PersonEmails+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 554917891BBF20E500D445F1 /* PersonEmails+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		554917911BBF20E500D445F1 /* PersonEmails.m in Sources */ = {isa = PBXBuildFile; fileRef = 5549178B1BBF20E500D445F1 /* PersonEmails.m */; settings = {ASSET_TAGS = (); }; };
+		554917921BBF20E500D445F1 /* Persons+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5549178D1BBF20E500D445F1 /* Persons+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		554917931BBF20E500D445F1 /* Persons.m in Sources */ = {isa = PBXBuildFile; fileRef = 5549178F1BBF20E500D445F1 /* Persons.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,18 +34,19 @@
 		554917661BBDCD6A00D445F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		554917691BBDCD6A00D445F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5549176B1BBDCD6A00D445F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		554917741BBDCF8600D445F1 /* PersonEmails+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PersonEmails+CoreDataProperties.h"; sourceTree = "<group>"; };
-		554917751BBDCF8600D445F1 /* PersonEmails+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PersonEmails+CoreDataProperties.m"; sourceTree = "<group>"; };
-		554917761BBDCF8600D445F1 /* PersonEmails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonEmails.h; sourceTree = "<group>"; };
-		554917771BBDCF8600D445F1 /* PersonEmails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonEmails.m; sourceTree = "<group>"; };
-		554917781BBDCF8600D445F1 /* Persons+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Persons+CoreDataProperties.h"; sourceTree = "<group>"; };
-		554917791BBDCF8600D445F1 /* Persons+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Persons+CoreDataProperties.m"; sourceTree = "<group>"; };
-		5549177A1BBDCF8600D445F1 /* Persons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Persons.h; sourceTree = "<group>"; };
-		5549177B1BBDCF8600D445F1 /* Persons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persons.m; sourceTree = "<group>"; };
 		554917811BBDD3D300D445F1 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		554917821BBDD3D300D445F1 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		554917841BBEFB1A00D445F1 /* TextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTableViewCell.h; sourceTree = "<group>"; };
 		554917851BBEFB1A00D445F1 /* TextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextTableViewCell.m; sourceTree = "<group>"; };
+		554917871BBF205500D445F1 /* MyFavPeople 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "MyFavPeople 2.xcdatamodel"; sourceTree = "<group>"; };
+		554917881BBF20E500D445F1 /* PersonEmails+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PersonEmails+CoreDataProperties.h"; sourceTree = "<group>"; };
+		554917891BBF20E500D445F1 /* PersonEmails+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PersonEmails+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5549178A1BBF20E500D445F1 /* PersonEmails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonEmails.h; sourceTree = "<group>"; };
+		5549178B1BBF20E500D445F1 /* PersonEmails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonEmails.m; sourceTree = "<group>"; };
+		5549178C1BBF20E500D445F1 /* Persons+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Persons+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5549178D1BBF20E500D445F1 /* Persons+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Persons+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5549178E1BBF20E500D445F1 /* Persons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Persons.h; sourceTree = "<group>"; };
+		5549178F1BBF20E500D445F1 /* Persons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persons.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +108,14 @@
 		554917801BBDCF8B00D445F1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				554917741BBDCF8600D445F1 /* PersonEmails+CoreDataProperties.h */,
-				554917751BBDCF8600D445F1 /* PersonEmails+CoreDataProperties.m */,
-				554917761BBDCF8600D445F1 /* PersonEmails.h */,
-				554917771BBDCF8600D445F1 /* PersonEmails.m */,
-				554917781BBDCF8600D445F1 /* Persons+CoreDataProperties.h */,
-				554917791BBDCF8600D445F1 /* Persons+CoreDataProperties.m */,
-				5549177A1BBDCF8600D445F1 /* Persons.h */,
-				5549177B1BBDCF8600D445F1 /* Persons.m */,
+				554917881BBF20E500D445F1 /* PersonEmails+CoreDataProperties.h */,
+				554917891BBF20E500D445F1 /* PersonEmails+CoreDataProperties.m */,
+				5549178A1BBF20E500D445F1 /* PersonEmails.h */,
+				5549178B1BBF20E500D445F1 /* PersonEmails.m */,
+				5549178C1BBF20E500D445F1 /* Persons+CoreDataProperties.h */,
+				5549178D1BBF20E500D445F1 /* Persons+CoreDataProperties.m */,
+				5549178E1BBF20E500D445F1 /* Persons.h */,
+				5549178F1BBF20E500D445F1 /* Persons.m */,
 				554917631BBDCD6A00D445F1 /* MyFavPeople.xcdatamodeld */,
 			);
 			name = Data;
@@ -190,15 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5549177E1BBDCF8600D445F1 /* Persons+CoreDataProperties.m in Sources */,
+				554917931BBF20E500D445F1 /* Persons.m in Sources */,
 				554917651BBDCD6A00D445F1 /* MyFavPeople.xcdatamodeld in Sources */,
 				554917861BBEFB1A00D445F1 /* TextTableViewCell.m in Sources */,
+				554917921BBF20E500D445F1 /* Persons+CoreDataProperties.m in Sources */,
 				554917831BBDD3D300D445F1 /* DetailViewController.m in Sources */,
-				5549177D1BBDCF8600D445F1 /* PersonEmails.m in Sources */,
+				554917911BBF20E500D445F1 /* PersonEmails.m in Sources */,
 				5549175F1BBDCD6A00D445F1 /* ViewController.m in Sources */,
-				5549177C1BBDCF8600D445F1 /* PersonEmails+CoreDataProperties.m in Sources */,
+				554917901BBF20E500D445F1 /* PersonEmails+CoreDataProperties.m in Sources */,
 				5549175C1BBDCD6A00D445F1 /* AppDelegate.m in Sources */,
-				5549177F1BBDCF8600D445F1 /* Persons.m in Sources */,
 				554917591BBDCD6A00D445F1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,9 +355,10 @@
 		554917631BBDCD6A00D445F1 /* MyFavPeople.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				554917871BBF205500D445F1 /* MyFavPeople 2.xcdatamodel */,
 				554917641BBDCD6A00D445F1 /* MyFavPeople.xcdatamodel */,
 			);
-			currentVersion = 554917641BBDCD6A00D445F1 /* MyFavPeople.xcdatamodel */;
+			currentVersion = 554917871BBF205500D445F1 /* MyFavPeople 2.xcdatamodel */;
 			path = MyFavPeople.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

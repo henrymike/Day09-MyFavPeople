@@ -2,12 +2,14 @@
 //  PersonEmails.h
 //  MyFavPeople
 //
-//  Created by Oscar on 10/1/15.
+//  Created by Oscar on 10/2/15.
 //  Copyright © 2015 Mike Henry. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+
+@class Persons;
 
 NS_ASSUME_NONNULL_BEGIN
 

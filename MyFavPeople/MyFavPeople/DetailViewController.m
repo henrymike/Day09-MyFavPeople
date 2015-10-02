@@ -61,8 +61,21 @@
         textCell.cellTextField.text = _currentPerson.personAddressZip;
     } else if (indexPath.row == 7) {
         textCell.cellTextField.text = _currentPerson.personPhone;
+    } else if (indexPath.row == 8) {
+        textCell.cellTextField.text = _currentPerson.personTwitterID;
+    } else if (indexPath.row == 9) {
+        textCell.cellTextField.text = _currentPerson.personSkypeID;
     }
+
+    
     return textCell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([_cellTypeArray[indexPath.row] isEqualToString:@"text"]) {
+        return 66.0;
+    }
+    return 44.0;
 }
 
 #pragma mark - Interactivity Methods
@@ -106,6 +119,14 @@
     TextTableViewCell *textCell7 = [_personView cellForRowAtIndexPath:indexPath7];
     _currentPerson.personPhone = textCell7.cellTextField.text;
     
+    NSIndexPath *indexPath8 = [NSIndexPath indexPathForRow:8 inSection:0];
+    TextTableViewCell *textCell8 = [_personView cellForRowAtIndexPath:indexPath8];
+    _currentPerson.personTwitterID = textCell8.cellTextField.text;
+    
+    NSIndexPath *indexPath9 = [NSIndexPath indexPathForRow:9 inSection:0];
+    TextTableViewCell *textCell9 = [_personView cellForRowAtIndexPath:indexPath9];
+    _currentPerson.personSkypeID = textCell9.cellTextField.text;
+    
     _currentPerson.dateUpdated = [NSDate date];
     _currentPerson.userID = @"System";
     [self saveAndPop];
@@ -123,8 +144,8 @@
     [super viewDidLoad];
     _appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     _managedObjectContext = _appDelegate.managedObjectContext;
-    _defaultCellTypeArray = @[@"text",@"text",@"text",@"text",@"text",@"text",@"text",@"text"];
-    _defaultCellLabelArray = @[@"First",@"Last",@"Role",@"Street",@"City",@"State",@"Zip",@"Phone"];
+    _defaultCellTypeArray = @[@"text",@"text",@"text",@"text",@"text",@"text",@"text",@"text",@"text",@"text"];
+    _defaultCellLabelArray = @[@"First",@"Last",@"Role",@"Street",@"City",@"State",@"Zip",@"Phone",@"Twitter",@"Skype"];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
