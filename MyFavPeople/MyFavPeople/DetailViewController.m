@@ -33,6 +33,7 @@
 
 - (void)addPersonLabels {
     //use the label create array from hangman**
+    
 }
 
 #pragma mark - Interactivity Methods
@@ -54,8 +55,17 @@
     _currentPerson.personPhone = _phoneTextField.text;
     _currentPerson.dateUpdated = [NSDate date];
     _currentPerson.userID = @"System";
+    
     [self saveAndPop];
 }
+
+// Keep this for when you get data loading into tableview but not able to save it back out
+//- (IBAction)savePressed:(id)sender {
+//    NSIndexPath *indexPath0 = [NSIndexPath indexPathForRow:0 inSection:0];
+//    TextFieldTableViewCell *textCell0 = [_sampleTableView cellForRowAtIndexPath:indexPath0];
+//    NSLog(@"Cell Text 0 %0",textCell0.cellTextField.text);
+//    //make sure you add a UITableView property for this before using and change to 1,2,3
+//}
 
 - (IBAction)deleteButtonPressed:(id)sender {
     NSLog(@"DELETE");
